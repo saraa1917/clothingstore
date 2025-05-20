@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clothing Store</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 1 -3" color="#FF6347" onclick="document.querySelector('#label').setAttribute('value', 'T-shirt')"></a-box>
+      <a-box position="0 1 -3" color="#4682B4" onclick="document.querySelector('#label').setAttribute('value', 'Pants')"></a-box>
+      <a-sphere position="1 1 -3" radius="0.5" color="#DAA520" onclick="document.querySelector('#label').setAttribute('value', 'Hat')"></a-sphere>
+      <a-text id="label" value="Click an item" position="-1 2 -2" color="black" width="4"></a-text>
+      <a-plane rotation="-90 0 0" width="10" height="10" color="#ccc"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
+Add index.html with basic A-Frame scene
