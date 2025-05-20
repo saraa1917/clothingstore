@@ -9,23 +9,15 @@
         <img id="360city" src="360city.jpg">
       </a-assets>
 
+    
       <!-- Suelo -->
-<a-plane rotation="-90 0 0" width="2" height="2" color="#eeeeee"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="2" height="2" src="#maderagris" ></a-plane>
 
-<!-- Pared del fondo -->
-<a-box position="0 1 -1" width="2" height="2" depth="0.05" src="#perchaspared1" ></a-box>
-
-<!-- Pared izquierda -->
-<a-box position="-1 1 0" width="0.05" height="2" depth="2" color="#ffffff"></a-box>
-
-<!-- Pared derecha -->
-<a-box position="1 1 0" width="0.05" height="2" depth="2" color="#ffffff"></a-box>
-
-<!-- Pared frontal  -->
-<a-box position="0 1 1" width="2" height="2" depth="0.05" color="#ffffff" opacity="0.7"></a-box>
-
-<!-- Techo -->
-<a-box position="0 2 0" width="2" height="0.05" depth="2" color="#dddddd"></a-box>
+      <!-- Paredes -->
+      <a-box position="0 1 -1" height="2" width="2"  depth="0.1" src="#perchaspared1"></a-box>
+      <a-box position="0 1  1" height="2" width="2"  depth="0.1" src="#paredbonita"></a-box>
+      <a-box position="1 1  0" height="2" width="2"  depth="0.1" rotation= "0 90 1" src="#paredbonita"></a-box>
+      <a-box position="-1 1 0" height="2" width="2"  depth="0.1" rotation= "0 -90 1" src="#paredbonita""></a-box>
 
 
 
