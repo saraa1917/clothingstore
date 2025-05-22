@@ -31,12 +31,29 @@
       <a-box position="2 1  0" height="2" width="4"  depth="0.1" rotation= "0 90 0" src="#granitoparedes"></a-box>
       <a-box position="-2 1 0" height="2" width="4"  depth="0.1" rotation= "0 90 0" src="#granitoparedes"></a-box>
 
-
-
-
-      
+     
       <!-- Cielo claro -->
       <a-sky src="#360city"></a-sky>
+
+      
+  <!-- Caja -->
+  <a-box id="miCaja"
+         position="0 1 -3"
+         color="#FFC0CB"
+         depth="0.5" height="0.5" width="0.5"
+         revelar-texto>
+  </a-box>
+
+  <!-- Texto oculto al principio -->
+  <a-entity id="textoCaja"
+            visible="false"
+            position="0 2 -3"
+            text="value: ¡Hola! Soy una caja sorpresa.; align: center; color: black;">
+  </a-entity>
+
+  <a-camera position="0 1.6 0"></a-camera>
+
+
 
     </a-scene>
   </body>
