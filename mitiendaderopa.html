@@ -55,13 +55,23 @@
       </a-box>
 <a-entity geometry="primitive: cylinder; height: 3; radius: 2" color="olive" position=" 0 0 0" scale="0.3 0.3 0.3"></a-entity>
      
-<!-- Cartel decorativo con texto -->
-      <a-entity 
-        geometry="primitive: plane; height: 1; width: 2" 
-        material="color: white" 
-        position="0 2 -2.99"
-        text="value: Sarah's store; align: center; color: black; width: 4; font: mozillavr"
-      ></a-entity>
+<!-- Cartel con fondo de imagen -->
+      <a-entity position="0 2 -2.99">
+        <!-- Fondo del cartel -->
+        <a-plane 
+          width="2" 
+          height="1" 
+          src="#sign-bg"
+        ></a-plane>
+
+        <!-- Texto del cartel -->
+        <a-text 
+          value="Sarah's store" 
+          align="center" 
+          color="white" 
+          width="3"
+          position="0 0 0.01"
+        ></a-text>
 
 <!-- Texto oculto -->
       <a-entity id="textoDress"
