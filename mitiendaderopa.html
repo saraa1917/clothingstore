@@ -74,29 +74,11 @@
           value="Sarah's store"   align="center"   color="white"   width="3" position="-1.5 -0.6 3.1" rotation="0 90 0"
         ></a-text>
 
-<!-- Texto oculto -->
-      <a-entity id="textoDress"
-                visible="false"
-                position="0 2 -3"
-                text="value: Dress; align: center; color: black; width: 4;">
-      </a-entity>
 
-      <a-camera position="0 1.6 0"></a-camera>
+          
     </a-scene>
 
-    <!-- Componente para mostrar el texto al hacer clic -->
-    <script>
-      AFRAME.registerComponent('mostrar-palabra', {
-        init: function () {
-          this.el.addEventListener('click', function () {
-            const texto = document.querySelector('#textoDress');
-            texto.setAttribute('visible', true);
-          });
-        }
-      });
-    </script>
-      
-      
+           
     </a-scene>
   </body>
 </html>
